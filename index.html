@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>化学（有機） クイズ</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* --- 省略: 先ほどの明瞭UIカード風CSS --- */
+body { font-family: 'Noto Sans JP', sans-serif; background: #eaf2f8; margin:0; padding:20px; }
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 26px;           /* 文字を少し小さく */
+  background: #d7003a;       /* タイトル背景の色 */
+  padding: 12px 0;           /* 上下に余白を追加 */
+  border-radius: 12px;       /* 角を丸く */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 軽い影で浮き上がらせる */
+}
+.quiz-box{max-width:520px;margin:0 auto;background:#fff;border-radius:15px;box-shadow:0 8px 20px rgba(0,0,0,0.15);padding:25px;transition:transform 0.2s;}
+.quiz-box:hover{transform:translateY(-2px);}
+#question{font-size:20px;font-weight:700;color:#222;margin-bottom:20px;}
+.choice{display:flex;flex-direction:column;align-items:center;justify-content:center;background:#f0f4ff;border:none;border-radius:12px;padding:15px;margin:10px 0;width:100%;font-size:17px;font-weight:500;cursor:pointer;position:relative;overflow:hidden;transition:all 0.3s ease;}
+.choice:hover{background:#dbe3ff;transform:translateY(-2px);}
+.choice img{max-width:80%;margin-top:8px;border-radius:8px;}
+.choice.correct::after{content:"✔";color:#16a34a;font-size:22px;position:absolute;right:16px;top:50%;transform:translateY(-50%);}
+.choice.incorrect::after{content:"✖";color:#dc2626;font-size:22px;position:absolute;right:16px;top:50%;transform:translateY(-50%);}
+#result{margin-top:18px;font-weight:600;font-size:16px;min-height:22px;}
+#progress,#score{margin-top:12px;font-size:14px;color:#555;}
+button#nextBtn,button#restartBtn{margin-top:18px;padding:12px 24px;font-size:17px;border-radius:10px;cursor:pointer;border:none;color:#fff;background:#4f46e5;transition:0.3s;}
+button#nextBtn:hover,button#restartBtn:hover{background:#4338ca;}
+</style>
+</head>
+<body>
+<h1>化学（有機） クイズ</h1>
+<div class="quiz-box">
+  <p id="question">ロード中…</p>
+  <div id="choices"></div>
+  <p id="result"></p>
+  <p id="progress"></p>
+  <p id="score"></p>
+  <button id="nextBtn" style="display:none;">次の問題へ</button>
+  <button id="restartBtn" style="display:none;">最初からやり直す</button>
+</div>
+
+<script>
+let quizData = [];
+let currentQuiz = 0;
+let score = 0;
+
+const questionEl = document.getElementById("question");
+const choicesEl = document.getElementById("choices");
+const resultEl = document.getElementById("result");
+const progressEl = document.getElementById("progress");
+const scoreEl = document.getElementById("score");
+const nextBtn = document.getElementById("nextBtn");
+const restartBtn = document.getElementById("restartBtn");
+
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
+function loadQuiz() {
+  const quiz = quizData[currentQuiz];
+  questionEl.textContent = quiz.question;
+  resultEl.textContent = "";
+  choicesEl.innerHTML = "";
+  nextBtn.style.display = "none";
+  restartBtn.style.display = "none";
+
+  const shuffledChoices = shuffleArray([...quiz.choices]);
+  shuffledChoices.forEach(choice => {
+    const btn = document.createElement("button");
+    btn.className = "choice";
+    if (choice.text) btn.textContent = choice.text;
+    if (choice.img) {
+      const imgEl = document.createElement("img");
+      imgEl.src = choice.img;
+      btn.appendChild(imgEl);
+    }
+    btn.onclick = () => checkAnswer(btn, choice, quiz);
+    choicesEl.appendChild(btn);
+  });
+
+  progressEl.textContent = `第 ${currentQuiz + 1} 問 / 全 ${quizData.length} 問`;
+  scoreEl.textContent = `スコア: ${score} / ${quizData.length}`;
+}
+
+function checkAnswer(btn, selectedChoice, quiz) {
+  const correctChoice = quiz.choices[quiz.answer];
+  if (selectedChoice === correctChoice) {
+    resultEl.textContent = "正解！🎉 " + quiz.explanation;
+    resultEl.style.color = "#16a34a";
+    btn.classList.add("correct");
+    score++;
+  } else {
+    resultEl.textContent = "不正解… 😢 " + quiz.explanation;
+    resultEl.style.color = "#dc2626";
+    btn.classList.add("incorrect");
+  }
+  scoreEl.textContent = `スコア: ${score} / ${quizData.length}`;
+  nextBtn.style.display = "inline-block";
+}
+
+nextBtn.onclick = () => {
+  currentQuiz++;
+  if (currentQuiz < quizData.length) {
+    loadQuiz();
+  } else {
+    questionEl.textContent = "全問終了！お疲れさま！";
+    choicesEl.innerHTML = "";
+    resultEl.textContent = `最終スコア: ${score} / ${quizData.length}`;
+    progressEl.textContent = "";
+    nextBtn.style.display = "none";
+    restartBtn.style.display = "inline-block";
+  }
+};
+
+restartBtn.onclick = () => {
+  currentQuiz = 0;
+  score = 0;
+  shuffleArray(quizData);
+  loadQuiz();
+};
+
+// 外部JSON読み込み
+fetch("quiz.json")
+  .then(response => response.json())
+  .then(data => {
+    quizData = data;
+    shuffleArray(quizData);
+    loadQuiz();
+  })
+  .catch(err => {
+    questionEl.textContent = "問題データの読み込みに失敗しました";
+    console.error(err);
+  });
+
+</script>
+</body>
+</html>
