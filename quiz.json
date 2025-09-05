@@ -1885,17 +1885,6 @@
     "explanation": "ベンゼンのハロゲン化にはルイス酸触媒（Fe, FeCl3 など）が必要である。"
   },
   {
-    "question": "フリーデル・クラフツ反応に用いられる触媒はどれか？",
-    "choices": [
-      {"text": "AlCl3", "img": null},
-      {"text": "Fe2O3", "img": null},
-      {"text": "CuO", "img": null},
-      {"text": "H2SO4", "img": null}
-    ],
-    "answer": 0,
-    "explanation": "フリーデル・クラフツ反応にはルイス酸触媒 AlCl3 が用いられる。"
-  },
-  {
     "question": "置換基の配向性に関して、ニトロ基はどのような性質を示すか？",
     "choices": [
       {"text": "オルト・パラ配向性", "img": null},
@@ -1960,5 +1949,453 @@
     ],
     "answer": 1,
     "explanation": "アニリンは酸と反応して塩を作り、芳香環の活性が低下するため直接ニトロ化は困難である。"
+  },{
+    "question": "安息香酸の分子式はどれか？",
+    "choices": [
+      {"text": "C6H6O", "img": null},
+      {"text": "C6H5COOH", "img": null},
+      {"text": "C7H8O", "img": null},
+      {"text": "C6H12O6", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "安息香酸はベンゼン環にカルボキシ基がついた化合物で、分子式は C6H5COOH。"
+  },
+  {
+    "question": "安息香酸はどのような用途で使われるか？",
+    "choices": [
+      {"text": "食品保存料", "img": null},
+      {"text": "爆薬", "img": null},
+      {"text": "潤滑油", "img": null},
+      {"text": "電池材料", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "安息香酸は食品保存料として利用される。"
+  },
+  {
+    "question": "フタル酸はベンゼン環にカルボキシ基がいくつついているか？",
+    "choices": [
+      {"text": "1つ", "img": null},
+      {"text": "2つ", "img": null},
+      {"text": "3つ", "img": null},
+      {"text": "4つ", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "フタル酸はベンゼン環にカルボキシ基が2つ隣同士についた構造を持つ。"
+  },
+  {
+    "question": "サリチル酸はどのような医薬品の原料か？",
+    "choices": [
+      {"text": "アスピリン", "img": null},
+      {"text": "アドレナリン", "img": null},
+      {"text": "ビタミンC", "img": null},
+      {"text": "ペニシリン", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "サリチル酸はアスピリン（アセチルサリチル酸）の原料である。"
+  },
+  {
+    "question": "アゾ化合物の一般的な特徴はどれか？",
+    "choices": [
+      {"text": "強い酸性を示す", "img": null},
+      {"text": "鮮やかな色を持つ", "img": null},
+      {"text": "無色透明", "img": null},
+      {"text": "強い還元性を示す", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "アゾ化合物は -N=N- 結合を持ち、鮮やかな色を呈するため染料に使われる。"
+  },
+  {
+    "question": "アゾ染料を合成するために重要な反応はどれか？",
+    "choices": [
+      {"text": "ジアゾ化反応", "img": null},
+      {"text": "付加反応", "img": null},
+      {"text": "縮合反応", "img": null},
+      {"text": "置換反応", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "アニリンなどの芳香族アミンをジアゾ化してからアゾカップリング反応でアゾ染料が得られる。"
+  },
+  {
+    "question": "ジアゾ化反応を行うのに必要な温度条件は？",
+    "choices": [
+      {"text": "約0〜5℃の低温", "img": null},
+      {"text": "常温（20〜25℃）", "img": null},
+      {"text": "約100℃", "img": null},
+      {"text": "約200℃", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "ジアゾ化反応は不安定なジアゾニウム塩を生成するため、低温で行う必要がある。"
+  },
+  {
+    "question": "メチルオレンジはどのような種類の化合物か？",
+    "choices": [
+      {"text": "酸塩基指示薬", "img": null},
+      {"text": "食品保存料", "img": null},
+      {"text": "爆薬", "img": null},
+      {"text": "界面活性剤", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "メチルオレンジはアゾ染料の一種で、酸塩基指示薬として用いられる。"
+  },
+  {
+    "question": "アントラセンの構造はどのようなものか？",
+    "choices": [
+      {"text": "ベンゼン環1つ", "img": null},
+      {"text": "ベンゼン環2つ直線状", "img": null},
+      {"text": "ベンゼン環3つ直線状", "img": null},
+      {"text": "ベンゼン環3つ縮合して角度を持つ", "img": null}
+    ],
+    "answer": 2,
+    "explanation": "アントラセンはベンゼン環が3つ直線状に縮合した構造を持つ。"
+  },
+  {
+    "question": "ナフタレンはどのような構造を持つか？",
+    "choices": [
+      {"text": "ベンゼン環1つ", "img": null},
+      {"text": "ベンゼン環2つが縮合した構造", "img": null},
+      {"text": "ベンゼン環3つ直線状", "img": null},
+      {"text": "ベンゼン環4つ縮合", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "ナフタレンは2つのベンゼン環が縮合した構造を持つ。"
+  },
+  {
+    "question": "芳香族炭化水素が不完全燃焼したときに生成しやすい物質はどれか？",
+    "choices": [
+      {"text": "一酸化炭素", "img": null},
+      {"text": "二酸化炭素", "img": null},
+      {"text": "二酸化硫黄", "img": null},
+      {"text": "酸素", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "芳香族炭化水素は炭素数が多いため不完全燃焼しやすく、一酸化炭素を生成する。"
+  },
+  {
+    "question": "芳香族化合物が環境汚染物質として問題視される理由は？",
+    "choices": [
+      {"text": "難分解性で蓄積しやすい", "img": null},
+      {"text": "揮発性が低すぎる", "img": null},
+      {"text": "水にすぐ溶けて消える", "img": null},
+      {"text": "酸素とすぐ反応する", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "芳香族化合物は難分解性で環境中に蓄積しやすいため問題となる。"
+  },{
+    "question": "フェノールとナトリウムの反応で発生する気体はどれか？",
+    "choices": [
+      {"text": "酸素", "img": null},
+      {"text": "水素", "img": null},
+      {"text": "二酸化炭素", "img": null},
+      {"text": "アンモニア", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "フェノールのヒドロキシ基が弱酸性を示し、ナトリウムと反応して水素が発生する。"
+  },
+  {
+    "question": "ベンゼン環のニトロ化で用いられる試薬の組み合わせはどれか？",
+    "choices": [
+      {"text": "濃硝酸と濃硫酸", "img": null},
+      {"text": "硝酸ナトリウムと塩酸", "img": null},
+      {"text": "硝酸カリウムと水酸化ナトリウム", "img": null},
+      {"text": "硝酸アンモニウムと硫酸", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "ベンゼンのニトロ化は、発煙硝酸（濃硝酸）と濃硫酸の混酸で行う。"
+  },
+  {
+    "question": "アニリンをジアゾ化する際に必要な条件はどれか？",
+    "choices": [
+      {"text": "0〜5℃の低温", "img": null},
+      {"text": "100℃以上の高温", "img": null},
+      {"text": "常温", "img": null},
+      {"text": "光を当てる", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "アニリンをジアゾ化する際は、塩酸中で亜硝酸ナトリウムを加え、0〜5℃の低温条件で反応させる必要がある。"
+  },
+  {
+    "question": "トルエンの酸化により生成する主な化合物はどれか？",
+    "choices": [
+      {"text": "安息香酸", "img": null},
+      {"text": "ベンズアルデヒド", "img": null},
+      {"text": "アセトフェノン", "img": null},
+      {"text": "フェノール", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "トルエンは酸化されると側鎖がすべて酸化され、安息香酸を生成する。"
+  },
+  {
+    "question": "ベンゼンとクロロベンゼンの融点を比較するとどうなるか？",
+    "choices": [
+      {"text": "クロロベンゼンの方が高い", "img": null},
+      {"text": "ベンゼンの方が高い", "img": null},
+      {"text": "同じである", "img": null},
+      {"text": "比較できない", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "クロロベンゼンは分子量が大きく分子間力も強いため、融点はベンゼンより高い。"
+  },
+  {
+    "question": "サリチル酸にカルボキシ基とヒドロキシ基が両方あることに関連する性質はどれか？",
+    "choices": [
+      {"text": "昇華性を示す", "img": null},
+      {"text": "強酸性を示す", "img": null},
+      {"text": "エステル化しやすい", "img": null},
+      {"text": "還元性を示す", "img": null}
+    ],
+    "answer": 2,
+    "explanation": "サリチル酸はカルボキシ基とヒドロキシ基を持ち、どちらもエステル化できるためエステル合成の原料として利用される。"
+  },
+  {
+    "question": "ニトロベンゼンを還元すると最も一般的に得られる化合物はどれか？",
+    "choices": [
+      {"text": "ベンズアルデヒド", "img": null},
+      {"text": "アニリン", "img": null},
+      {"text": "フェノール", "img": null},
+      {"text": "安息香酸", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "ニトロベンゼンをスズと塩酸などで還元するとアニリンが得られる。"
+  },
+  {
+    "question": "アゾ染料が着色を示す理由はどれか？",
+    "choices": [
+      {"text": "芳香族環があるから", "img": null},
+      {"text": "−N=N−結合が共役系を作るから", "img": null},
+      {"text": "窒素が含まれるから", "img": null},
+      {"text": "水に溶けやすいから", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "アゾ染料は−N=N−基が芳香族環と共役して、可視光を吸収するために着色を示す。"
+  },
+  {
+    "question": "アニリンが水にあまり溶けない理由はどれか？",
+    "choices": [
+      {"text": "分子量が大きいから", "img": null},
+      {"text": "極性が小さいから", "img": null},
+      {"text": "芳香族環の疎水性が強いから", "img": null},
+      {"text": "分子が直鎖状だから", "img": null}
+    ],
+    "answer": 2,
+    "explanation": "アニリンはアミノ基があるものの、ベンゼン環の疎水性が強いため水にあまり溶けない。"
+  },
+  {
+    "question": "フェノールを臭素水に加えるとどうなるか？",
+    "choices": [
+      {"text": "沈殿を生じる", "img": null},
+      {"text": "発熱して発火する", "img": null},
+      {"text": "無色透明のまま", "img": null},
+      {"text": "気体が発生する", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "フェノールは臭素水と反応して2,4,6-トリブロモフェノールを沈殿として生じる。"
+  },{
+    "question": "ベンゼン環に置換基が入るとき、ニトロ基(−NO2)の配向性はどれか？",
+    "choices": [
+      {"text": "オルト・パラ配向性", "img": null},
+      {"text": "メタ配向性", "img": null},
+      {"text": "不規則", "img": null},
+      {"text": "配向性を持たない", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "ニトロ基は電子求引性が強く、芳香族環を不活性化するためメタ配向性を示す。"
+  },
+  {
+    "question": "アミノ基(−NH2)の配向性はどれか？",
+    "choices": [
+      {"text": "オルト・パラ配向性", "img": null},
+      {"text": "メタ配向性", "img": null},
+      {"text": "不規則", "img": null},
+      {"text": "配向性を持たない", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "アミノ基は電子供与性が強く、芳香族環を活性化しオルト・パラ配向性を示す。"
+  },
+  {
+    "question": "ベンゼン環の共鳴エネルギーはどのような性質を示すか？",
+    "choices": [
+      {"text": "芳香族性の安定性を表す", "img": null},
+      {"text": "不安定さを表す", "img": null},
+      {"text": "溶解性を表す", "img": null},
+      {"text": "沸点を表す", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "共鳴エネルギーはベンゼン環が通常の二重結合より安定であることを示す指標。"
+  },
+  {
+    "question": "フェノールを鉄(III)塩溶液に加えるとどのような呈色を示すか？",
+    "choices": [
+      {"text": "赤紫色", "img": null},
+      {"text": "緑色", "img": null},
+      {"text": "青紫色", "img": null},
+      {"text": "黄色", "img": null}
+    ],
+    "answer": 2,
+    "explanation": "フェノールはFe(III)塩溶液で特有の青紫色を示す。"
+  },
+  {
+    "question": "アニリンをスルホン化したときの生成物はどれか？",
+    "choices": [
+      {"text": "スルファニル酸", "img": null},
+      {"text": "安息香酸", "img": null},
+      {"text": "フェノール", "img": null},
+      {"text": "トルエン", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "アニリンのスルホン化で得られるのはスルファニル酸である。"
+  },
+  {
+    "question": "フェノールの酸性は酢酸と比較してどうか？",
+    "choices": [
+      {"text": "フェノールの方が強い", "img": null},
+      {"text": "酢酸の方が強い", "img": null},
+      {"text": "同じくらい", "img": null},
+      {"text": "比較できない", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "フェノールは酸性を示すが酢酸より弱い酸である。"
+  },
+  {
+    "question": "アニリンの塩酸塩にNaOHを加えるとどうなるか？",
+    "choices": [
+      {"text": "アニリンが遊離する", "img": null},
+      {"text": "アニリンが酸化される", "img": null},
+      {"text": "無色透明のまま", "img": null},
+      {"text": "沈殿を生じる", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "アニリン塩酸塩にNaOHを加えるとアニリンが遊離する。"
+  },
+  {
+    "question": "ジアゾ化合物をフェノールと反応させると何ができるか？",
+    "choices": [
+      {"text": "アゾ染料", "img": null},
+      {"text": "フェニルアミン", "img": null},
+      {"text": "安息香酸", "img": null},
+      {"text": "ベンズアルデヒド", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "ジアゾニウム塩とフェノールはカップリング反応によりアゾ染料を生成する。"
+  },
+  {
+    "question": "ナフタレンのスルホン化で得られる主な生成物はどれか？",
+    "choices": [
+      {"text": "1-ナフタレンスルホン酸", "img": null},
+      {"text": "2-ナフタレンスルホン酸", "img": null},
+      {"text": "ベンゼンスルホン酸", "img": null},
+      {"text": "安息香酸", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "ナフタレンのスルホン化では条件により1-または2-ナフタレンスルホン酸が生成するが、通常は1-体が多い。"
+  },
+  {
+    "question": "ベンゼンに比べてニトロベンゼンの反応性はどうか？",
+    "choices": [
+      {"text": "高い", "img": null},
+      {"text": "低い", "img": null},
+      {"text": "同じくらい", "img": null},
+      {"text": "不規則", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "ニトロ基は電子求引性のためベンゼン環を不活性化し、反応性は低くなる。"
+  },
+  {
+    "question": "ベンゼンスルホン酸は何に利用されることが多いか？",
+    "choices": [
+      {"text": "染料や洗剤の原料", "img": null},
+      {"text": "食品保存料", "img": null},
+      {"text": "触媒", "img": null},
+      {"text": "防腐剤", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "ベンゼンスルホン酸やその塩は界面活性剤や染料の原料として利用される。"
+  },
+  {
+    "question": "フェノール樹脂の原料はフェノールと何か？",
+    "choices": [
+      {"text": "ホルムアルデヒド", "img": null},
+      {"text": "酢酸", "img": null},
+      {"text": "ベンズアルデヒド", "img": null},
+      {"text": "トルエン", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "フェノール樹脂はフェノールとホルムアルデヒドの縮合によって得られる。"
+  },
+  {
+    "question": "アニリンを直接ニトロ化するとどうなるか？",
+    "choices": [
+      {"text": "多ニトロ化される", "img": null},
+      {"text": "一置換で止まる", "img": null},
+      {"text": "全く反応しない", "img": null},
+      {"text": "還元される", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "アニリンは強いオルト・パラ配向性を持ち、直接ニトロ化すると多ニトロ化が進んでしまう。"
+  },
+  {
+    "question": "ベンゼンを塩化鉄(III)存在下で塩素化すると生成するのはどれか？",
+    "choices": [
+      {"text": "クロロベンゼン", "img": null},
+      {"text": "塩化ベンジル", "img": null},
+      {"text": "フェニルアミン", "img": null},
+      {"text": "フェノール", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "ベンゼンをFeCl3触媒下で塩素化するとクロロベンゼンが得られる。"
+  },
+  {
+    "question": "アニリンの塩酸塩は水に対してどうか？",
+    "choices": [
+      {"text": "よく溶ける", "img": null},
+      {"text": "ほとんど溶けない", "img": null},
+      {"text": "全く溶けない", "img": null},
+      {"text": "不安定で存在しない", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "アニリン自体は水に溶けにくいが、その塩酸塩は水に良く溶ける。"
+  },
+  {
+    "question": "アニリンブラックはどのような用途で使われるか？",
+    "choices": [
+      {"text": "繊維の染料", "img": null},
+      {"text": "防腐剤", "img": null},
+      {"text": "医薬品", "img": null},
+      {"text": "殺虫剤", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "アニリンブラックはアニリンの酸化重合で得られる黒色染料で、繊維染色に用いられる。"
+  },
+  {
+    "question": "フェノールは次のどの性質を持つか？",
+    "choices": [
+      {"text": "弱酸性", "img": null},
+      {"text": "強酸性", "img": null},
+      {"text": "中性", "img": null},
+      {"text": "塩基性", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "フェノールは水酸基を持ち弱酸性を示す。"
+  },
+  {
+    "question": "p-ニトロアニリンは水に溶けにくい理由はどれか？",
+    "choices": [
+      {"text": "分子量が大きいから", "img": null},
+      {"text": "芳香族環の疎水性が強いから", "img": null},
+      {"text": "窒素が多いから", "img": null},
+      {"text": "配向性があるから", "img": null}
+    ],
+    "answer": 1,
+    "explanation": "芳香族環の疎水性とニトロ基の存在により水に溶けにくくなる。"
+  },
+  {
+    "question": "アゾ染料の合成で用いられる重要な反応はどれか？",
+    "choices": [
+      {"text": "カップリング反応", "img": null},
+      {"text": "付加反応", "img": null},
+      {"text": "置換反応", "img": null},
+      {"text": "酸化還元反応", "img": null}
+    ],
+    "answer": 0,
+    "explanation": "ジアゾニウム塩と芳香族化合物とのカップリング反応でアゾ染料が合成される。"
   }
 ]
